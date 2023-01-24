@@ -1,0 +1,93 @@
+import java.util.Scanner;
+public class Hesapmakinasistatic {
+    static int total(int a,int b){
+        return a+b;
+    }
+    static int total1(int a,int b){
+        return a-b;
+    }
+    static int total2(int a,int b){
+        return a*b;
+    }
+    static int total3(int a,int b){
+        if (b==0){
+            System.out.println("Tanımsızdır");
+            return 0;
+        }
+        return a/b;
+    }
+    static int total4(int a,int b){
+        int result=1;
+        for (int i=1; i<=b; i++){
+            result *= a;
+        }
+        return result;
+    }
+    static int total5(int a,int b){
+        return a%b;
+    }
+    static void total6(int a,int b){
+        System.out.println("Çevresi : "+(2*(a+b)));
+        System.out.println("Alanı : "+(a*b));
+    }
+
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        int process,number,number1;
+
+        String menu ="1-)Toplama İşlemi\n" +
+                "2-)Çıkarma İşlemi\n" +
+                "3-Çarpma İşlemi\n" +
+                "4-Bölme İşlemi\n" +
+                "5-)Üs Sayı İşlemi\n" +
+                "6-)Kalanı Bulma\n" +
+                "7-)Dikdörtgende Alan Ve Çevre Hesabı\n" +
+                "0-)Çıkış\n";
+
+        System.out.println(menu);
+
+        while (true){
+
+            System.out.print("Bir İşlem Seçiniz : ");
+            process = input.nextInt();
+            if (process==0){
+                break;
+            }
+            System.out.print("Sayı Giriniz : ");
+            number = input.nextInt();
+
+            System.out.print("Sayı Giriniz : ");
+            number1 = input.nextInt();
+
+            switch (process){
+                case 1:
+                    System.out.println("Sonuç : "+total(number,number1));
+                    break;
+                case 2:
+                    System.out.println("Sonuç : "+total1(number,number1));
+                    break;
+                case 3:
+                    System.out.println("Sonuç : "+total2(number,number1));
+                    break;
+                case 4:
+                    System.out.println("Sonuç : "+total3(number,number1));
+                    break;
+                case 5:
+                    System.out.println("Sonuç : "+total4(number,number1));
+                    break;
+                case 6:
+                    System.out.println("Sonuç : "+total5(number,number1));
+                    break;
+                case 7:
+                    total6(number,number1);
+                    break;
+            }
+
+        }
+        System.out.println("\nYAŞASIN MATEMATİK\n");
+    }
+
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class DaireDilimininAlani {
+
+    public static void main(String[] args) {
+
+        double r,a,pi = 3.14,formul;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Dairenin Yarıçapını Giriniz: ");
+        r = input.nextDouble();
+
+        System.out.print("Dairenin Merkez Açısının Ölçüsünü Giriniz: ");
+        a = input.nextDouble();
+
+        formul = (pi*(r*r)*a)/360;
+        System.out.println("Daire Diliminin Alanı: " + formul);
+
+    }
+
+}

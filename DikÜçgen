@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class DikUcgen {
+    public static void main(String[] args) {
+
+        double a,b,c;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Dik Kenar: ");
+        a = input.nextDouble();
+
+        System.out.print("Dik Kenar: ");
+        b = input.nextDouble();
+
+        c = Math.sqrt((a*a + b*b));
+
+        System.out.println("Hipotenüs: " + c);
+
+
+    }
+}

@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class ManavKasaProgrami {
+
+    public static void main(String[] args) {
+
+        double kg,a,e,d,m,p,aa=2.14,ee=3.67,dd=1.11,mm=0.95,pp=5.00;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Armut KG Tutarınızı Giriniz: ");
+        a = input.nextDouble();
+
+        System.out.print("Elma KG Tutarınızı Giriniz: ");
+        e = input.nextDouble();
+
+        System.out.print("Domates KG Tutarınızı Giriniz: ");
+        d = input.nextDouble();
+
+        System.out.print("Muz KG Tutarınızı Giriniz: ");
+        m = input.nextDouble();
+
+        System.out.print("Patlıcan KG Tutarınzı Giriniz: ");
+        p =input.nextDouble();
+
+        kg = (a*aa)+(e*ee)+(d*dd)+(m*mm)+(p*pp);
+        System.out.println("Toplam Tutar: " + kg + " TL");
+
+    }
+
+}

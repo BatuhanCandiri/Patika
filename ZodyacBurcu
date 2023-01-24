@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class ZodyacBurcu {
+
+    public static void main(String[] args) {
+
+
+        double zodyac,dogumyili;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Doğum Yılınızı Giriniz : ");
+        dogumyili = input.nextDouble();
+
+        zodyac = (dogumyili%12);
+
+        if (zodyac == 0){
+            System.out.println("\nZodyac Burcunuz : Maymun");
+        } else if (zodyac == 1) {
+            System.out.println("\nZodyac Burcunuz : Horoz");
+        } else if (zodyac == 2) {
+            System.out.println("\nZodyac Burcunuz : Köpek");
+        } else if (zodyac == 3) {
+            System.out.println("\nZodyac Burcunuz : Domuz");
+        } else if (zodyac == 4) {
+            System.out.println("\nZodyac Burcunuz : Fare");
+        } else if (zodyac == 5) {
+            System.out.println("\nZodyac Burcunuz : Öküz");
+        } else if (zodyac == 6) {
+            System.out.println("\nZodyac Burcunuz : Kaplan");
+        } else if (zodyac == 7) {
+            System.out.println("\nZodyac Burcunuz : Tavşan");
+        } else if (zodyac == 8) {
+            System.out.println("\nZodyac Burcunuz : Ejderha");
+        } else if (zodyac == 9) {
+            System.out.println("\nZodyac Burcunuz : Yılan");
+        } else if (zodyac == 10) {
+            System.out.println("\nZodyac Burcunuz : At");
+        } else if (zodyac == 11) {
+            System.out.println("\nZodyac Burcunuz : Koyun");
+        }else{
+            System.out.println("Geçersiz Veri Girişi");
+        }
+
+    }
+
+}

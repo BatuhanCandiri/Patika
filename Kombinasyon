@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Kombinasyon {
+
+    public static void main(String[] args) {
+
+        int n,r;
+        int total1 = 1,total2 = 1,total3 = 1;
+        int formul,formul2;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("\nKOMBİNASYON HESABI\n");
+
+        System.out.print("N Sayısını Giriniz : ");
+        n = input.nextInt();
+
+        System.out.print("\nR Sayısını Giriniz : ");
+        r = input.nextInt();
+
+        if (n>r){
+
+            formul2 = (n-r);
+
+            for (int y=1; y<=n; y++){
+                total1 *= y;
+            }
+            for (int b=1; b<=r; b++){
+                total2 *= b;
+            }
+            for (int c=1; c<=formul2; c++){
+                total3 *= c;
+            }
+
+            formul = total1/(total2*(total3));
+            System.out.println("\nToplam : " + formul);
+
+        }else{
+            System.out.println("\nN Sayısı R Sayısından Büyük Olmalıdır");
+        }
+
+
+    }
+
+}

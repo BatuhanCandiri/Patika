@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class PerfectNumber {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        int perfectNumber;
+        int total=0;
+
+        System.out.println("MÜKEMMEL SAYI PROGRAMI");
+
+        System.out.print("Bir Sayı Giriniz : ");
+        perfectNumber = input.nextInt();
+
+        for (int i=1; i<perfectNumber; i++){
+
+            if (perfectNumber%i==0){
+                total += i;
+            }
+        }
+
+        System.out.println("======================================");
+
+        System.out.println("Sayıların Toplamı : " + total);
+
+        System.out.println("======================================");
+
+        if (perfectNumber == total){
+            System.out.println(perfectNumber + " Mükemmel Sayıdır");
+        }else{
+            System.out.println(perfectNumber + " Mükemmel Sayı Değildir");
+        }
+
+    }
+
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class DoWhileTwoFour {
+
+    public static void main(String[] args) {
+
+        int b, total=0;
+
+        Scanner input = new Scanner(System.in);
+
+        do {
+            System.out.print("Sayı Giriniz : ");
+            b = input.nextInt();
+
+            if (b%2 == 0){
+                total += b;
+            }
+
+        }while (b%2 == 0);
+
+        System.out.println("Toplam : " + total);
+    }
+
+}
+
+// Dört Sayısını Koymamamın Sebebi 4'e Bölünen Sayıların Hepsi Çifttir.
+// Bizden de İstenen 4'e Bölünen Ve Çift Sayılar Olduğu İçin.
+// Sadece Çift Sayıları Almak Daha Mantıklı.

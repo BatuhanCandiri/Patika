@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class UcVeDorteBolunenSayilar {
+
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Sayı Giriniz : ");
+        int number = input.nextInt();
+
+        int i=1;
+        int t=1;
+
+
+        System.out.println("3'ÜN KATLARI");
+
+        while (i <= number){
+            if (i %3 == 0) {
+                System.out.println(i);
+            }   i++;
+
+        }
+        System.out.println("4'ÜN KATLARI");
+
+        while (t <= number){
+            if (t %4 == 0){
+                System.out.println(t);
+            }   t++;
+
+        }
+
+    }
+
+}

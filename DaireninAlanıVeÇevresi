@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class DaireninAlaniVeCevresi {
+
+    public static void main(String[] args) {
+
+        double r,pi=3.14,alanFor,cevreFor;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Dairenin Yarıçapını Giriniz: ");
+        r = input.nextDouble();
+
+        alanFor = (pi*r*r);
+        cevreFor = (2*pi*r);
+
+        System.out.println("Dairenin Alanı: " + alanFor);
+        System.out.println("Dairenin Cevresi: " + cevreFor);
+
+    }
+
+}

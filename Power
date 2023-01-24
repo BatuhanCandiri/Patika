@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Power {
+    static int power (int a,int b){
+        int result=1;
+        if (a<0 || b<0){
+            System.out.println("Geçersiz İşlem");
+            return 0;
+        }
+        for (int i=1; i<=b; i++){
+            result *= a;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+        int number,number1;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("ÜSLÜ SAYI PROGRAMI");
+        System.out.print("Taban Sayısını Giriniz : ");
+        number = input.nextInt();
+
+        System.out.print("Üs Sayısını Giriniz : ");
+        number1 = input.nextInt();
+
+        System.out.print("Sonuç : "+power(number,number1));
+
+    }
+
+}

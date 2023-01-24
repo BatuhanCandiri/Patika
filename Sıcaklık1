@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Sicaklik1 {
+
+    public static void main(String[] args) {
+
+        double head ;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Sıcaklık Miktarını Giriniz: ");
+        head = input.nextDouble();
+
+        if (head < 5){
+            System.out.println("Kayak Etkinliği Önerilir");
+        } else if (head <= 15) {
+            System.out.println("Sinema Etkinliği Önerilir");
+        } else if (head <= 25) {
+            System.out.println("Piknik Etkinliği Önerilir");
+        } else if (head <= 50) {
+            System.out.println("Yüzme Etkinliği Önerilir");
+        }else{
+            System.out.println("Yüksek Sıcaklık");
+        }
+
+    }
+
+}
