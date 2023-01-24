@@ -1,0 +1,2 @@
+# Ptaika
+Tüm Dersler
